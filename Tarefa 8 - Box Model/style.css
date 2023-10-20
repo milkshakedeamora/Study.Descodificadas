@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    background-image: url(./imgGirrasol.jpeg);
+    background-size: cover;
+    border: 20px solid #8a04a2;
+    box-shadow: inset 10px 6px 23px 10px #f2ea55;
+    padding: 10px;
+    outline: 30px double #f5e90a;;
+    text-align: center;
+}
+
+p {
+    font-size: 30px;
+    color:red;
+    line-height: 400px;
+}
+
+footer {
+    text-align: center;
+    background-color: #f4fc00;
+    color: black;
+    padding-top: 10px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
+a{
+    text-decoration: none;
+}
