@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com Vídeo de Fundo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; 
+        }
+        .section1 {
+            
+            position: relative;
+            color: #fff;
+            text-align: center;
+            
+            width: 80%;
+            box-sizing: border-box;
+            padding: 40px;
+            margin: 30px auto ;
+            border-radius: 15px;
+            background-image: url('./olu.jpg');
+            background-size: cover;
+            background-position: center; 
+        }
+
+
+        .section {
+            padding: 40px;
+            margin: 30px auto ;
+            border-radius: 15px;
+            position: relative;
+            color: #fff;
+            text-align: center;            
+            width: 80%; 
+            box-sizing: border-box; 
+            
+        }
+
+        .section img {
+            width: 100%;
+            height: auto;
+        }
+
+        .red-background {
+            background-color: red;
+        }
+
+       
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="./LuffyAce.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos em HTML5.
+    </video>
+
+    <div class="section1">
+        <h2>OS CHAPÉUS DE PALHA</h2>
+        <p>One Piece</p>
+       
+    </div>
+
+    <div class="section red-background">
+        <h2>Seção 2</h2>
+        <p>Texto da Seção 2</p>
+    </div>
+
+    <div class="section" id="carousel">
+        <h2>Conheça mais sobre eles</h2>
+        
+    </div>
+
+    <div class="section" id="map">
+        <h2>Onde estão</h2>        
+        
+    </div>
+
+    <div class="section">
+        <h2>VENHA SE JUNTAR AOS CHAPÉUS DE PALHA</h2>
+        
+        <form>
+            
+        </form>
+    </div>
+
+    <footer>
+        <p> MILKSHAKEDEAMORA</p>
+    </footer>
+</body>
+</html>
