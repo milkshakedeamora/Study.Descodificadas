@@ -1,109 +1,281 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site com Vídeo de Fundo</title>
+    <title>CHAPÉUS DE PALHA</title>
+    <link rel="icon" href="./Luffys_flag_icon-icons.com_76118.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
             margin: 0;
             padding: 0;
-            
+
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.2) !important;
         }
 
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-light .navbar-brand {
+            color: #fff !important;
+        }
         #video-background {
             position: fixed;
             top: 0;
             left: 0;
             min-width: 100%;
             min-height: 100%;
-            z-index: -1; 
+            z-index: -1;
         }
+
         .section1 {
-            
+
             position: relative;
             color: #fff;
             text-align: center;
-            
             width: 80%;
             box-sizing: border-box;
             padding: 40px;
-            margin: 30px auto ;
+            margin: 30px auto;
             border-radius: 15px;
             background-image: url('./olu.jpg');
             background-size: cover;
-            background-position: center; 
+            background-position: center;
         }
 
 
         .section {
+            background-color: rgba(0, 0, 0, 0.2);
             padding: 40px;
-            margin: 30px auto ;
+            margin: 30px auto;
             border-radius: 15px;
             position: relative;
             color: #fff;
-            text-align: center;            
-            width: 80%; 
-            box-sizing: border-box; 
-            
+            text-align: justify;
+            width: 80%;
+            box-sizing: border-box;
+
         }
 
         .section img {
             width: 100%;
             height: auto;
+            border-radius: 15px;
         }
 
         .red-background {
-            background-color: red;
+            background-color: rgba(255, 0, 0, 0.466);
         }
 
-       
+        .section-Carousel {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-        footer {
-            background-color: #333;
+        .metade {
+            width: 48%;
+            padding: 20px;
+
+
+        }
+
+        .section h2 {
+            text-align: center;
+        }
+
+        .carousel-item .carousel-image {
+            max-width: 75%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 18px;
+            border: 1px solid #fff;
+        }
+
+        button:hover {
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .footer {
+            background-color: #0000001c;
             color: #fff;
             text-align: center;
             padding: 10px;
         }
     </style>
 </head>
+
 <body>
     <video id="video-background" autoplay muted loop>
         <source src="./LuffyAce.mp4" type="video/mp4">
         Seu navegador não suporta vídeos em HTML5.
     </video>
 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="./Luffys_flag_icon-icons.com_76118.ico" width="30" height="30"
+                    class="d-inline-block align-top" alt="Logo">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#section2">Chapéus de Palha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carousel">Tripulantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#map">Localização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form">Junte-se a Nós</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
     <div class="section1">
         <h2>OS CHAPÉUS DE PALHA</h2>
         <p>One Piece</p>
-       
+
     </div>
 
-    <div class="section red-background">
-        <h2>Seção 2</h2>
-        <p>Texto da Seção 2</p>
+    <div class="section red-background" id="section2">
+        <p>Os Piratas do Chapéu de Palha, também conhecidos como a Tripulação do Chapéu de Palha ou simplesmente Chapéus
+            de Palha, são uma tripulação pirata ascendente e infame que se originou do East Blue, mas que possui vários
+            membros de locais diferentes. Eles são o principal foco e protagonistas do mangá e anime One Piece, e são
+            liderados pelo protagonista principal, Monkey D. Luffy. Os "Chapéus de Palha" foram nomeados assim devido a
+            assinatura de Luffy, seu chapéu, que foi dado a ele por Shanks, o Ruivo. Eles foram referidos assim pela
+            primeira vez por Smoker em Alabasta. A tripulação navegou no Going Merry, o primeiro navio oficial dos
+            Chapéus de Palha, até o Arco Water 7. Durante o Arco Pós-Enies Lobby, Franky e Iceburg construíram um novo
+            navio que foi chamado de Thousand Sunny por Iceberg, embora os membros lutassem por nomes diferentes. Os
+            Chapéus de Palha atualmente consistem em dez membros cujas recompensas combinadas são iguais a ฿
+            8.815.001.000</p>
     </div>
 
-    <div class="section" id="carousel">
-        <h2>Conheça mais sobre eles</h2>
-        
+    <div class="section section-Carousel" id="carousel">
+
+        <div class="metade">
+            <div id="carouselSection" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 carousel-image"
+                            src="https://static.wikia.nocookie.net/onepiece/images/a/a9/Monkey_D._Luffy_Portrait.png/revision/latest/scale-to-width-down/119?cb=20210922012213&path-prefix=pt"
+                            alt="Monkey D. Luffy">
+                        <div class="carousel-caption d-none d-md-block">
+                            <button
+                                onclick="location.href='https://onepiece.fandom.com/pt/wiki/Monkey_D._Luffy'">Luffy</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img class="d-block w-100 carousel-image"
+                            src="https://static.wikia.nocookie.net/onepiece/images/5/5d/Roronoa_Zoro_Portrait.png/revision/latest?cb=20210302053731&path-prefix=pt"
+                            alt="Roronoa Zoro">
+                        <div class="carousel-caption d-none d-md-block">
+                            <button onclick="location.href='https://onepiece.fandom.com/pt/wiki/Roronoa_Zoro'">Roronoa
+                                Zoro</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img class="d-block w-100 carousel-image"
+                            src="https://static.wikia.nocookie.net/onepiece/images/2/26/Nami_Portrait.png/revision/latest/scale-to-width-down/119?cb=20210922012224&path-prefix=pt"
+                            alt="Nami">
+                        <div class="carousel-caption d-none d-md-block">
+                            <button onclick="location.href='https://onepiece.fandom.com/pt/wiki/Nami'">Nami</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img class="d-block w-100 carousel-image"
+                            src="https://static.wikia.nocookie.net/onepiece/images/9/97/Usopp_Portrait.png/revision/latest/scale-to-width-down/119?cb=20210922012400&path-prefix=pt"
+                            alt="Sanji">
+                        <div class="carousel-caption d-none d-md-block">
+                            <button onclick="location.href='https://onepiece.fandom.com/pt/wiki/Usopp'">Usopp</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img class="d-block w-100 carousel-image"
+                            src="https://static.wikia.nocookie.net/onepiece/images/0/0c/Sanji_Portrait.png/revision/latest/scale-to-width-down/119?cb=20210922012333&path-prefix=pt"
+                            alt="Usopp">
+                        <div class="carousel-caption d-none d-md-block">
+                            <button onclick="location.href='https://onepiece.fandom.com/pt/wiki/Sanji'">Sanji</button>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselSection" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselSection" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+        <div class="metade">
+            <p>Como resultado das escolhas de Luffy sobre quem se junta à tripulação, os Chapéus de Palha são notáveis
+                ​​por serem uma das mais variadas, se não bizarras, tripulações piratas no mundo de One Piece. Suas
+                posições têm membros muito diferentes uns dos outros. Os Chapéus de Palha têm quatro usuários da Fruta
+                do Diabo: Luffy, Chopper, Robin e Brook. A maior parte da tripulação é bastante jovem, com três membros
+                em seus vinte anos, três ainda sendo adolescentes e quatro membros com trinta anos ou mais, embora dois
+                dos quatro membros mais antigos sejam tão infantis quanto os outros. Diferentemente da maioria dos
+                tripulantes, eles consideram que seus navios também são membros da tripulação</p>
+        </div>
+
     </div>
 
     <div class="section" id="map">
-        <h2>Onde estão</h2>        
-        
+        <h2>Onde estão</h2>
+
+        <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://maps.google.com/maps?q=-27.391750,40.686338&hl=pt&z=14&amp;output=embed"></iframe>
+
     </div>
 
     <div class="section">
         <h2>VENHA SE JUNTAR AOS CHAPÉUS DE PALHA</h2>
-        
         <form>
-            
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="celular">Número de Celular:</label><br>
+            <input type="tel" id="celular" name="celular"><br>
+            <input type="submit" value="Enviar">
         </form>
     </div>
 
-    <footer>
-        <p> MILKSHAKEDEAMORA</p>
-    </footer>
+    <div class="footer" id="form">
+        &copy; 2023 <a href="https://github.com/milkshakedeamora">Milkshakedeamora</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
